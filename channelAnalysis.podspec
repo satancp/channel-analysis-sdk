@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "9.3"
   spec.requires_arc = true
-  spec.source = { git: "", tag: "v#{spec.version}", submodules: true }
+  spec.source = { git: "https://github.com/satancp/channelAnalysis.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "channelAnalysis/**/*.{h,swift}"
 end
