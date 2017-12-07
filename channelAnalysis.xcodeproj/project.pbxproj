@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		836CBE551FD91AFD00FE4A34 /* channelAnalysis.h in Headers */ = {isa = PBXBuildFile; fileRef = 836CBE531FD91AFD00FE4A34 /* channelAnalysis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		836CBE5C1FD91DFF00FE4A34 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CBE5B1FD91DFF00FE4A34 /* Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		836CBE501FD91AFD00FE4A34 /* channelAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = channelAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		836CBE531FD91AFD00FE4A34 /* channelAnalysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = channelAnalysis.h; sourceTree = "<group>"; };
 		836CBE541FD91AFD00FE4A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836CBE5B1FD91DFF00FE4A34 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				836CBE531FD91AFD00FE4A34 /* channelAnalysis.h */,
 				836CBE541FD91AFD00FE4A34 /* Info.plist */,
+				836CBE5B1FD91DFF00FE4A34 /* Initialization.swift */,
 			);
 			path = channelAnalysis;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					836CBE4F1FD91AFD00FE4A34 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836CBE5C1FD91DFF00FE4A34 /* Initialization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,6 +274,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chris.channelAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -277,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
